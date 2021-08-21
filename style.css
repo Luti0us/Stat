@@ -12,7 +12,8 @@ h2 {
   font-family: sans-serif;
   font-size: 40px;
   font-weight: 1000;
-  height: 25px;
+  height: 20px;
+  margin-top: -15px;
 }
 a{
   color: #f2f2f2;
@@ -45,6 +46,7 @@ a{
 .headerBoarder {
   position: relative;
   margin-top: -6px;
+  margin-bottom: -40px;
   padding: 3px;
   color: #e6e6e6;
   background: #f2f2f2;
