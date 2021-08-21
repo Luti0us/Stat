@@ -94,3 +94,11 @@ html{
         color: #f2f2f2;
         height: 411px;
       }
+      .portImage {
+        width: 400px;
+        border-radius: 30px;
+        border: 6px solid #ffffff;
+        margin-top: 10px;
+        margin-left: 25%;
+        margin-right: 25%;
+      }
