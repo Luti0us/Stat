@@ -77,6 +77,19 @@ html{
         height: 200px;
         margin-bottom: 25px;
       }
+     .gamesettings {
+        display: inline-grid;
+        grid-auto-columns: (3,1);
+        grid-gap: -10px;
+        text-align: center;
+        font-family:sans-serif;
+        width: 25%;
+        background-color: #1a1a1a;
+        border: 6px solid #1a1a1a;
+        color: #f2f2f2;
+        height: 350px;
+        margin-bottom: 25px;
+      }
       .ico {
         width: 140px;
         height: 140px;
