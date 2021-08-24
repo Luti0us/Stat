@@ -61,6 +61,7 @@ a{
   text-shadow: -1px 1px #000;
 }
 .pfp {
+  justify-content: center;
   width: 200px;
   height: 200px;
   border-radius: 100px;
