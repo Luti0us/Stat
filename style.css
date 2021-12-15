@@ -161,8 +161,6 @@ select {
 /* Footer Below This*/
 #footer {
   background-color: #0d0d0d;
-  width: 100%;
-  height: auto;
-  position:absolute;
+  bottom: 0;
   left: 0;
 }
