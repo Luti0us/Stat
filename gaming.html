@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <meta property="og:url" content="https://luti0us.github.io/Stat/">
+    <meta property="og:image" content="https://luti0us.github.io/Stat/images/Maybepfp.jpg">
+    <meta property="og:description" content="References to all my settings/work/socials. Anything and everything is here.">
+    <meta property="og:title" content="nasu - Personal Website">
+    <meta property="theme-color" content="#EEEEEE">
+    <link rel="icon" href="images/nobac.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+
+  <div style="width:100%; height: 85px; position: sticky; top: 8;">
+
+    <div class="topHeader"></div>
+
+    <div class="header">
+      <h1 class="title">nasu</h1>
+      <img src="images\logo.png" class = "titleimg">
+      <a href="index.html" class="MainRedirect">About</a>
+      <a href="gaming.html" class="MainRedirect">Gaming</a>
+      <a href="music.html" class="MainRedirect">Music</a>
+    </div>
+
+    <div class="bottomHeader"></div>
+
+  </div>
+  
+  <!-- Start of actual code-->
+  <center>
+    <p style="margin-top: 30px; width: 80%;">
+      Link to my exact PC build, other specs are preference - <a href="https://pcpartpicker.com/list/zrkzBc" target="_blank">Here</a>
+    </p>
+    <p style="margin-bottom: 80px; width: 80%;">
+      Also the cpu isn't listed fully you need to select a drop down.
+    </p>
+  </center>
+
+  <center><p style="margin-top: 30px; width: 80%; font-size: 30px;">Game Settings (all 800 dpi):</p>
+
+  <label for="game" style="
+  color: #f2f2f2;
+  text-decoration-color: black;
+  text-shadow: -3px 2px #000;
+  font-family: sans-serif;
+  font-weight: 1000;
+  font-size: 20px;">Choose a game: </label>
+
+  <select name='game' onchange="ChangeGame(this.value)" id='selector'>
+    <option value="circles">Osu!</option>
+    <option value="csgo">CSGO</option>
+    <option value="rocket">Rocket League</option>
+    <option value="rust">Rust</option>
+  </select>
+  
+
+  <div id='circles' class="gamesettings">
+    <p  style="font-size: 35px; margin-right: 10px; position: absolute;">Osu!</p>
+    <a href="https://www.dropbox.com/sh/9ks01kdc1840lz4/AABTIwA7yEtfsynVSGDfmYXLa?dl=0"  target="_blank" class="MainRedirect" style="position:inherit; margin-right: 15px;">Skin</a>
+    <video width="100%" height="100%" controls>
+      <source src="clips/osuSettings.mp4" type="video/mp4">
+    </video> 
+  </div>
+
+  <div id='csgo' class="gamesettings">
+    <p  style="display: inherit; font-size: 40px;">Counter Strike</p>
+    <video width="100%" height="100%" controls>
+      <source src="clips/csgoSettings.mp4" type="video/mp4">
+    </video> 
+  </div>
+
+  <div id='rocket' class="gamesettings">
+    <p  style="display: inherit; font-size: 40px;">Rocket League</p>
+    <video width="100%" height="100%" controls>
+      <source src="clips/rlSettings.mp4" type="video/mp4">
+    </video> 
+  </div>
+
+  <div id='rust' class="gamesettings">
+    <p  style="display: inherit; font-size: 40px;">Rust</p>
+    <video width="100%" height="100%" controls>
+      <source src="clips/rustSettings.mp4" type="video/mp4">
+    </video> 
+  </div>
+  </center>
+
+  <script>
+    let options = ["csgo", "rocket", "rust", "circles"]
+    function ChangeGame(value) {
+      for (var i = 0; i < options.length; i++) {
+        var currentElement = options[i];
+        document.getElementById(currentElement).style.display = "none"
+        if (currentElement == value) {
+          document.getElementById(currentElement).style.display = "flex"
+        }
+      }
+    }
+  </script>
+
+  <div style="display:block; width: 100%; height: 50px;"></div>
+
+  <div>
+
+  </div>
+
+  <div id='social' style='display: inline;'>
+    <center>
+      <p>Steam Account Here:</p>
+      <a href="https://steamcommunity.com/profiles/76561198176848535/" target="_blank"><img src="images/Steam.png"></a>
+    </center>
+  </div>
+
+  <footer id="footer">
+    <img src="images/footer.png" style="width: 100%; height: 45px; object-fit:contain">
+  </footer>
+
+</body>
+
+</html>
