@@ -1,41 +1,168 @@
 html {
-    background: #000000
+    background: #000000;
 }
 body {
     background: #262626;
-    height: 100%;
   }
-
+.topHeader {
+  background: #000000;
+  width: 100%;
+  height: 20px;
+  top: -12px;
+  position: fixed;
+}
 .header {
     display:-webkit-flex;
     width: 100%;
     height: 75px;
     background: #0d0d0d;
 }
-
+.bottomHeader {
+    position: inherit;
+    background-color: white;
+    width: 100%;
+    height: 5px;
+}
 .title {
-    display: -webkit-flex;
-    align-self: center;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 35px;
-    text-indent: 25px;
-    color: #f0f0f0;
-  }
-
+  display: -webkit-flex;
+  align-self: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 45px;
+  text-indent: 25px;
+  color: #f0f0f0;
+}
 .titleimg {
-    display: -webkit-flex;
-    align-self: center;
-    width: 150px;
-    margin-left: 15px;
+  display: -webkit-flex;
+  align-self: center;
+  width: 175px;
+  margin-left: 30px;
+}
+.MainRedirect {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  margin-left: 40px;
+  left: 10px;
+  text-decoration: none;
+  align-self:center;
+  text-align: justify;
+  font-family: sans-serif;
+  text-align: left;
+  font-weight: bold;
+  font-size: 35px;
+  color: #f0f0f0;
+  display: flex;
+  margin: 5px auto;
+  justify-content:space-evenly;
+}
+.MainRedirect:hover, .MainRedirect:focus, .MainRedirect:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.MainRedirect:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -1;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.MainRedirect:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+  
+/* EVERYTHING THAT IS IN THE HEADER IS ABOVE THIS*/
+
+/* Start of canvas*/
+
+p {
+  color: #f2f2f2;
+  text-decoration-color: black;
+  text-shadow: -3px 2px #000;
+  font-family: sans-serif;
+  font-weight: 1000;
+  font-size: 20px;
+  position: inherit;
 }
 
-.redirects {
-    margin-left: 50px;
-    align-self: center;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 30px;
-    color: #f0f0f0;
+.pfp {
+  position: static;
+  width: 250px;
+  height: 250px;
+  border-radius: 35%;
+  border: 4px solid #0d0d0d;
+  margin-top: 50px;
+}
+
+.twitchembed {
+  text-align: center;
+  width: 800px;
+  background-color: #1a1a1a;
+  border: 6px solid #1a1a1a;
+  color: #f2f2f2;
+  height: 450px;
+}
+#social {
+  width: 100%;
+  position: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+#social img {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  width: 15%;
+  position:relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+#social img:hover, #social img:focus, #social img:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+select {
+  background-color: black;
+  border: white;
+  color: #f0f0f0;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  width: 140px;
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+.gamesettings {
+  display: none;
+  text-align: center;
+  font-family:sans-serif;
+  width: 60%;
+  background-color: #1a1a1a;
+  border: 6px solid #1a1a1a;
+  color: #f2f2f2;
+  height: 500px;
+}
+
+/* Footer Below This*/
+#footer {
+  background-color: #0d0d0d;
+  width: 100%;
+  height: auto;
+  position:absolute;
+  left: 0;
 }
